@@ -1,7 +1,8 @@
 # adminlte :: dash- flask 
 # noti-api :: fastapi - uvicorn
 
-from template.homeboard  import app
+# from template.homeboard  import app
+from apps import app
 # app = dash.Dash(__name__, requests_pathname_prefix="/dash/")
 
 # ------
@@ -9,7 +10,7 @@ import uvicorn as uvicorn
 from fastapi import FastAPI
 from starlette.middleware.wsgi import WSGIMiddleware
 
-from app.routes import index #auth
+from routes import index #auth
 
 def create_app():
     srvr=FastAPI()

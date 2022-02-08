@@ -59,7 +59,6 @@ from app.routes import index #auth
 def create_app():
     srvr=FastAPI()
     srvr.mount("/dash", WSGIMiddleware(app.server))   # /dash
-
     srvr.include_router(index.router)
     return srvr
 

@@ -20,6 +20,26 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
 
+#--------add dash 20220108 pju-----------------------------------------------------------------
+from ui.sidebar_callbacks import update_breadcrumbs, activate_page_content
+from pages.basic_boxes.callbacks import update_box_graph
+from pages.tab_cards.callbacks   import display_tabbox1
+from pages.gallery_1.callbacks import make_graph
+from pages.gallery_2.callbacks import update_figure
+
+# Dash Page --------------------------------------------------------------------------------
+# from pages.dash_pages.callbacks import dash_data_load
+from pages.dash_pages.callbacks import dash_plot1_render
+from pages.dash_pages.callbacks import dash_plot2_render
+from pages.dash_pages.callbacks import dash_plot3_render
+from pages.dash_pages.callbacks import dash_plot4_render
+from pages.dash_pages.callbacks import dash_plot5_render
+from pages.dash_pages.callbacks import dash_data_load
+from pages.dash_pages.callbacks import dash_data_table_load
+from pages.dash_pages.callbacks import dash_render_datatable
+#--------add dash 20220108 pju-----------------------------------------------------------------
+
+
 
 router = APIRouter()
 # -------------------
